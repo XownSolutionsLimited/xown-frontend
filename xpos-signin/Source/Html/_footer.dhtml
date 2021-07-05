@@ -1,0 +1,18 @@
+
+        <script type="text/javascript">
+            var CheckBoxElements = document.querySelectorAll(".ms-CheckBox");
+                for (var i = 0; i < CheckBoxElements.length; i++) {
+                new fabric['CheckBox'](CheckBoxElements[i]);
+            }
+        </script>
+
+        <script type="text/javascript">
+            var ButtonElements = document.querySelectorAll(".ms-Button");
+            for (var i = 0; i < ButtonElements.length; i++) {
+                new fabric['Button'](ButtonElements[i], function () {
+                    // Insert Event Here
+                });
+            }
+        </script>
+    </body>
+</html>
