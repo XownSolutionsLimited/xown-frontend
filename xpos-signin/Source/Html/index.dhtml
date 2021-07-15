@@ -1,7 +1,6 @@
 <!--@ include header @-->
 
 <div class="container">
-<<<<<<< HEAD
 
         <div class="container-grid back-cover">
                 <div class="row">
@@ -116,89 +115,8 @@
                                 <div class="col"><img src="Assets/Images/group.png" alt="" srcset=""></div>
                         </div>
                         
-=======
-  <div class="container-grid">
-    <div class="row page-grid">
-      <!-- Logo -->
-      <div class="col logo-col">
-        <img src="Assets/Images/logo.png" alt="" srcset="" />
-      </div>
-
-      <!-- Create space between logo and signin box -->
-      <div class="clear-fix"></div>
-
-      <!-- Sign in Form -->
-      <div class="col login-col">
-        <div class="row login-box-row">
-          <div class="col login-form-box">
-            <div class="login-title">Sign in to your account</div>
-
-            <div class="clear-fix"></div>
-
-            <form>
-              <div class="ms-TextField">
-                <label class="ms-Label" for="user-email">Email or Username</label>
-                <input class="ms-TextField-field" name="user-email" id="user-email" type="text" value=""
-                  placeholder="" />
-              </div>
-
-              <div class="clear-fix"></div>
-
-              <div class="ms-TextField">
-                <label class="ms-Label" for="user-password">Password</label>
-                <input class="ms-TextField-field" name="user-password" id="user-password" type="password" value=""
-                  placeholder="" />
-              </div>
-
-              <div class="clear-fix"></div>
-
-              <div class="row oth-act-row">
-                <div class="col">
-                  <div class="ms-CheckBox">
-                    <input tabindex="-1" type="checkbox" class="ms-CheckBox-input" />
-                    <label role="checkbox" class="ms-CheckBox-field" tabindex="0" aria-checked="false" name="checkboxa">
-                      <span class="ms-Label sm-label"><strong>Stay signed in</strong></span>
-                    </label>
-                  </div>
->>>>>>> 1afd4c86762e3cdea2aad13d40a8c8edf2926676
                 </div>
-
-                <div class="col">
-                  <span class="ms-Label sm-label"><a class="ms-Link" title="Reset your password" href="#"><strong>Forgot
-                        your password?</strong></a></span>
-                </div>
-              </div>
-
-              <div class="clear-fix"></div>
-
-              <div class="row lg-btn-row">
-                <button class="ms-Button ms-Button--primary">
-                  <span class="ms-Button-label sm-label">Continue</span>
-                </button>
-              </div>
-            </form>
-          </div>
         </div>
-      </div>
-
-      <div class="clear-fix"></div>
-
-      <!-- Other Sign In Options -->
-      <div class="col ot-signin-options-col">
-        <div class="row ms-signin-row">
-          <!-- MS logo -->
-          <div class="col ms-logo-col">
-            <img src="Assets/Images/microsoft-logo.png" />
-          </div>
-
-          <!-- Sign in with Microsoft... -->
-          <div class="col txt-label-col">
-            <span>Sign in with Microsoft 365</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
 <!--@ include footer @-->
