@@ -17,7 +17,56 @@ html {
         // The height of the parent container
         height: 100vh;
 
-        .container-grid
+        .container-grid.back-cover
+        {
+            height: inherit;
+
+            // Inner rows
+            .row
+            {
+                height: 50%;
+            }
+
+            .lower-row
+            {
+                
+            }
+
+            // First backround row
+            > div:first-child
+            {
+                background-image: url("../Images/cover.png");
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-between;          
+            }
+
+            > div:last-child
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+
+                > div
+                {
+                    width: 55%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                
+                    > img
+                    {
+                        width: 250px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        .container-grid.form
         {
             // Set same height as parent
             height: inherit;
@@ -25,6 +74,12 @@ html {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
 
             // The general row styles
             .row {
@@ -47,9 +102,22 @@ html {
 
             .page-grid {
                 // The the page grid be vertical aligned
-                flex-direction: column;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
 
                 margin: auto auto;
+
+                > .dot-content
+                {
+                    margin: 0 24px;
+
+                    img 
+                    {
+                        height: auto;
+                        width: 155px;
+                    }
+                }
 
                 // The logo column
                 .logo-col {
@@ -66,15 +134,19 @@ html {
 
                 // The login box column
                 .login-col {
+
+                    // Set login column background
+                    background: white;
+
                     .login-box-row {
 
                         .login-form-box {
                             height: auto;
                             width : 400px;
 
-                            padding: 35px;
+                            padding: 45px;
                             border-radius: 4px;
-                            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+                            box-shadow: 0 2px 10px rgba(231, 122, 26, 0.3);
                             // box-shadow: 0 15px 35px 0 rgba(60, 66, 87, 0.08), 0 5px 15px 0 rgba(0, 0, 0, 0.12);
 
                             .login-title
@@ -101,6 +173,13 @@ html {
                                 {
                                     flex-direction: column;
                                 }
+
+                                .label-group
+                                {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                }
                             }
                         }
                     }
@@ -109,18 +188,21 @@ html {
                 // The 'other signin options' column
                 .ot-signin-options-col
                 {
+                    // Set the background
+                    background: #fff;
+
                     height: auto;
                     width : 400px;
 
-                    padding: 15px 35px;
+                    padding: 15px 45px;
 
-                    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 2px 10px rgba(231, 122, 26, 0.3);
 
                     cursor: pointer;
 
                     &:hover
                     {
-                        background-color: rgba(0,0,0,.1);
+                        background-color: rgb(141, 137, 137);
                         // background-color: rgba(190, 54, 54, 0.1);
                     }
 
@@ -128,7 +210,7 @@ html {
                     {
                         flex-direction: row;
                         align-items: center;
-                        justify-content: flex-start;
+                        justify-content: center;
 
                         .ms-logo-col
                         {
@@ -141,9 +223,10 @@ html {
 
                         .txt-label-col
                         {
-                            flex-grow: 1;
+                            // flex-grow: 1;
                             padding-left: 25px;
                             font-weight: 500;
+                            color: rgb(231, 122, 26);
                         }
                     }
                 }
